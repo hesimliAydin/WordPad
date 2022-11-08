@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cbox_Sizes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbox_Fonts = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbox_Sizes = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Bold = new System.Windows.Forms.Button();
             this.btn_Italic = new System.Windows.Forms.Button();
@@ -52,6 +52,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Redo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Undo)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cbox_Sizes
+            // 
+            this.cbox_Sizes.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.cbox_Sizes.FormattingEnabled = true;
+            this.cbox_Sizes.Items.AddRange(new object[] {
+            "8",
+            "10",
+            "12",
+            "14",
+            "16",
+            "18",
+            "20",
+            "22",
+            "24",
+            "26",
+            "28"});
+            this.cbox_Sizes.Location = new System.Drawing.Point(264, 73);
+            this.cbox_Sizes.Name = "cbox_Sizes";
+            this.cbox_Sizes.Size = new System.Drawing.Size(72, 31);
+            this.cbox_Sizes.TabIndex = 3;
+            this.cbox_Sizes.SelectedIndexChanged += new System.EventHandler(this.cbox_Fonts_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -89,28 +111,6 @@
             this.label2.Size = new System.Drawing.Size(57, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "Size";
-            // 
-            // cbox_Sizes
-            // 
-            this.cbox_Sizes.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.cbox_Sizes.FormattingEnabled = true;
-            this.cbox_Sizes.Items.AddRange(new object[] {
-            "8",
-            "10",
-            "12",
-            "14",
-            "16",
-            "18",
-            "20",
-            "22",
-            "24",
-            "26",
-            "28"});
-            this.cbox_Sizes.Location = new System.Drawing.Point(264, 73);
-            this.cbox_Sizes.Name = "cbox_Sizes";
-            this.cbox_Sizes.Size = new System.Drawing.Size(72, 31);
-            this.cbox_Sizes.TabIndex = 3;
-            this.cbox_Sizes.SelectedIndexChanged += new System.EventHandler(this.cbox_Fonts_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -271,6 +271,7 @@
             // 
             // pictureBox_Redo
             // 
+            this.pictureBox_Redo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Redo.Image = global::WordPad.Properties.Resources.icons8_redo_24;
             this.pictureBox_Redo.Location = new System.Drawing.Point(1230, 56);
             this.pictureBox_Redo.Name = "pictureBox_Redo";
@@ -282,6 +283,7 @@
             // 
             // pictureBox_Undo
             // 
+            this.pictureBox_Undo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox_Undo.Image = global::WordPad.Properties.Resources.icons8_undo_24;
             this.pictureBox_Undo.Location = new System.Drawing.Point(1172, 56);
             this.pictureBox_Undo.Name = "pictureBox_Undo";
