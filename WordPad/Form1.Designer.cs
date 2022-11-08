@@ -55,6 +55,7 @@
             // 
             // cbox_Sizes
             // 
+            this.cbox_Sizes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_Sizes.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.cbox_Sizes.FormattingEnabled = true;
             this.cbox_Sizes.Items.AddRange(new object[] {
@@ -87,6 +88,7 @@
             // 
             // cbox_Fonts
             // 
+            this.cbox_Fonts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_Fonts.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.cbox_Fonts.FormattingEnabled = true;
             this.cbox_Fonts.Items.AddRange(new object[] {
@@ -210,6 +212,7 @@
             // 
             // cbox_Colors
             // 
+            this.cbox_Colors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_Colors.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cbox_Colors.FormattingEnabled = true;
             this.cbox_Colors.Items.AddRange(new object[] {
